@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useContext, useEffect } from 'react'
+import AdminLogin from './pages/AdminLogin';
+import { Route, Routes, useNavigate } from 'react-router-dom';
+import { UserContext } from './config/UserConfigeration';
+import AdminHome from './pages/AdminHome';
+import AdminUploadBook from './pages/AdminUploadBook';
 
-function App() {
+const App = () => {
+  const [userData, setUserData] = useContext(UserContext);
+  const navigate = useNavigate();
+  useEffect(() => {
+    if(!userData?.token) {
+      navigate('/login');
+    }
+  }, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    <Routes>
+       <Route path='/login' element={<AdminLogin /> } />
+       <Route index element={<AdminHome /> } /> 
+       <Route path='/upload' element={<AdminUploadBook /> } /> 
+    </Routes>
+    </>
+  )
 }
 
 export default App;

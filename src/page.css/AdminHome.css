@@ -1,0 +1,27 @@
+.sentence{
+    font-size: 50px;
+    color: #ffffff;
+    text-decoration: underline;
+    background: #17102eee;
+    padding: 10px;
+}
+
+.update {
+    text-decoration: none;
+    font-size: 40px;
+    margin-left: 20px;
+}
+
+.update:hover {
+    font-size: 45px;
+    color: rgb(28, 90, 92);
+}
+
+.mmm {
+    border-radius: 2px solid rgb(83, 87, 90);
+}
+
+.frgr {
+    display: flex;
+    /* padding: 4px; */
+}

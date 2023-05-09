@@ -1,0 +1,25 @@
+.happy {
+    background: #17102eee;
+    padding: 8.2pc;
+}
+
+label, h1 {
+    color: white;
+}
+
+.happy form input {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-top: -150pc;
+}
+
+label {
+    font-size: 30px;
+}
+
+input {
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    margin-left: 20px;
+}
