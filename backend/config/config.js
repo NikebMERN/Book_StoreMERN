@@ -2,7 +2,7 @@ const db = require('./database');
 
 const createTables = () => {
   let user = `CREATE TABLE IF NOT EXISTS users (
-    user_id int auto_increment PRIMARY KEY,
+    id int auto_increment PRIMARY KEY,
     firstName VARCHAR(255) NOT NULL,
     lastName VARCHAR(255) NOT NULL,
     email VARCHAR(255) NOT NULL,
@@ -10,7 +10,7 @@ const createTables = () => {
   )`;
 
   let book = `CREATE TABLE IF NOT EXISTS books (
-    book_id INT AUTO_INCREMENT PRIMARY KEY,
+    id INT AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR(255) NOT NULL,
     author VARCHAR(255) NOT NULL,
     category VARCHAR(255),

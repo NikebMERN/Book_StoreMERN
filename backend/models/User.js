@@ -19,7 +19,7 @@ const User = {
   },
   findById: async (id) => {
     const idget = await db.query('SELECT * FROM users WHERE id = ?', [id]);
-    const result = await db.query(`DELETE FROM users WHERE users.user_id = ${idget}`)
+    const result = await db.query(`DELETE FROM users WHERE users.id = ${idget}`)
     return result[0];
   }
 };

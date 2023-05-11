@@ -13,7 +13,7 @@ const register = async (req, res) => {
   const { firstName, lastName, email, password } = req.body;
 
   if(!firstName || !lastName || !email || !password) {
-    return res.status(400).json({ message: 'All fileds must be provided' });
+    return res.status(400).json({ message: 'All fields must be provided' });
   }else if(password.length < 8) {
     return res.status(400).json({ message: 'Password must be 8 characters and above' })
   } else {
