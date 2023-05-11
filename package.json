@@ -14,5 +14,13 @@
   "license": "ISC",
   "dependencies": {
     "concurrently": "^8.0.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NikebMERN/Book_StoreMERN.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NikebMERN/Book_StoreMERN/issues"
+  },
+  "homepage": "https://github.com/NikebMERN/Book_StoreMERN#readme"
 }
